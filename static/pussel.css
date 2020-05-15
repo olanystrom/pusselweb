@@ -1,0 +1,13 @@
+.pussel{
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+
+#preload-01 { background: url(/static/img/loy/loy1.jpg) no-repeat -9999px -9999px; }
+#preload-02 { background: url(/static/img/loy/loy2.jpg) no-repeat -9999px -9999px; }
+#preload-03 { background: url(/static/img/loy/loy3.jpg) no-repeat -9999px -9999px; }
+#preload-04 { background: url(/static/img/loy/loy4.jpg) no-repeat -9999px -9999px; }

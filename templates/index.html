@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pussel
+{% endblock %}
+
+{% block body %}
+    <h1>Pusselbild</h1>
+    {% for yy in range(y) %}
+        {% for xx in range(x) %}
+           {% set active = (xx + (yy*x)) %}
+           {% set image = ["map"]|random%}
+           {% set filename  = "img/loy" ~ active ~ ".jpeg" %}
+           <img class=pussel data-image={{ image }} data-id="{{ active+1 }}" id="loy{{ active }}" title="loy{{ active }}" src="static/img/loy/{{ image }}{{ active+1 }}.jpg"/>
+        {% endfor %}
+        <br>
+    {% endfor %}
+    </ul>
+{% endblock %}
